@@ -1,0 +1,34 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Full height for flexibility */
+    padding: 1rem; /* Padding for comfort */
+    gap: 0.5rem; /* Space between spinner and text */
+  }
+  
+  .loading-spinner {
+    border: 4px solid var(--grayscale-light); /* Light border for outer edge */
+    border-top: 4px solid var(--identity-primary); /* Primary color for animation */
+    border-radius: 50%; /* Rounded circle */
+    width: 40px; /* Size of the spinner */
+    height: 40px; /* Size of the spinner */
+    animation: spin 1s linear infinite; /* Animation for spinning */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    to {
+      transform: rotate(360deg); /* Complete a full rotation */
+    }
+  }
+  
+  .loading-container p {
+    color: var(--grayscale-dark); /* Dark color for text */
+    font-size: var(--body1-fonts); /* Consistent font size */
+    margin: 0; /* Remove default margin */
+  }
+  

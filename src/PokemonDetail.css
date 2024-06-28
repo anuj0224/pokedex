@@ -1,0 +1,90 @@
+.detail-main {
+    display: flex;
+    flex-direction: column;
+    padding: 0; /* Padding for the main container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: var(--drop-shadow); /* Add depth with a shadow */
+    
+  }
+  
+  .header {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space out elements */
+    border-bottom: 1px solid var(--grayscale-light); /* Bottom border for separation */
+    padding-bottom: 1rem; /* Padding for the header */
+  }
+  
+  .header-wrapper {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    gap: 1rem; /* Gap between elements */
+    
+  }
+  
+  .back-btn-wrap {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Center horizontally */
+    cursor: pointer; /* Indicate it's clickable */
+  }
+  
+  .back-btn-wrap img {
+    width: 24px; /* Set the icon size */
+    height: 24px; /* Set the icon size */
+    
+}
+  .name-wrap {
+    display: flex;
+    align-items: center; /* Align vertically */
+  }
+  
+  .name-wrap h1 {
+    font-size: var(--headline-font-size); /* Consistent font size */
+    color: var(--grayscale-dark); /* Dark color for text */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .detail-img-wrapper {
+    width: 200px; /* Fixed size for the image wrapper */
+    height: 200px;
+    border-radius: 16px; /* Rounded corners */
+    margin: 1rem auto; /* Center with margin */
+  }
+  
+  .detail-img-wrapper img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: contain; /* Fit the image within the container */
+  }
+  
+  .pokemon-info {
+    padding: 1rem; /* Padding for comfort */
+     /* Light background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: var(--drop-shadow-inner); /* Inner shadow for depth */
+  }
+  
+  .pokemon-info p {
+    color: var(--grayscale-dark); /* Dark color for text */
+    font-size: var(--body1-fonts); /* Consistent font size */
+    margin: 1px; /* Remove default margin */
+  }
+  
+  .pokemon-info ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+  }
+  
+  .pokemon-info ul li {
+    color: var(--grayscale-dark);; /* Consistent text color */
+    padding: 0.5rem 0; /* Padding for spacing */
+    border-bottom: 1px solid var(--grayscale-dark) ;
+  }
+  
+  .pokemon-info ul li:last-child {
+    border-bottom: 1px ; /* No border for the last item */
+  }
+  
+  

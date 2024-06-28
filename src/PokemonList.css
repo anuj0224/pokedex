@@ -1,0 +1,80 @@
+
+
+
+.pokemon-list {
+    padding: 1rem; 
+    background-color: transparent;
+    overflow: auto; 
+    max-height: 100vh; 
+  }
+
+  .header1{
+    margin-top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .container{
+    margin-top: 0;
+    padding: 0;
+  }
+  /* Wrapper for all list items */
+  .list-wrapper {
+    display: flex; /* Flex layout */
+    flex-wrap: wrap; /* Wrap items if needed */
+    gap: 1rem; /* Gap between items */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  /* Individual Pokémon list item */
+  .list-item {
+    background-color: var(--grayscale-light); /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: var(--drop-shadow); /* Shadow for depth */
+    width: 120px; /* Fixed width */
+    height: 120px; /* Fixed height */
+    text-align: center; /* Center the content */
+    cursor: pointer; /* Indicates interactivity */
+    transition: transform 0.3s; /* Smooth hover animation */
+  }
+  
+  .list-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: var(--drop-shadow-hover); /* Increase shadow on hover */
+  }
+  
+  /* Container for the Pokémon image */
+  .img-wrap {
+    width: 72px; /* Set width for the image */
+    height: 72px; /* Set height for the image */
+    margin: auto; /* Center the image */
+    padding-top: 10px; /* Padding for spacing */
+  }
+  
+  /* Style the image itself */
+  .img-wrap img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: contain; /* Ensure the image fits within the container */
+  }
+  
+  /* Container for the Pokémon name */
+  .name-wrap {
+    background-color: var(--grayscale-background); /* Background color for the name */
+    padding: 10px; /* Padding for spacing */
+    border-radius: 4px; /* Rounded corners */
+    color: var(--grayscale-dark); /* Dark color for text */
+    font-weight: var(--font-weight-bold); /* Bold text */
+  }
+  
+  /* Make the text capitalize each word */
+  .name-wrap p {
+    text-transform: capitalize; /* Capitalize Pokémon names */
+    font-size: var(--body3-fonts); /* Consistent font size */
+    margin: 0; /* Remove default margin */
+  }
+  
+  
+  
+  

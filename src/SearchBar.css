@@ -1,0 +1,123 @@
+:root {
+    --identity-primary: #dc0a2d;
+  
+    --grayscale-dark: #212121;
+    --grayscale-medium: #666666;
+    --grayscale-light: #e0e0e0;
+    --grayscale-background: #efefef;
+    --grayscale-white: #ffffff;
+  
+    --headline-font-size: 24px;
+    --body1-font-size: 14px;
+    --body2-font-size: 12px;
+    --body3-font-size: 10px;
+    --subtitle1-font-size: 14px;
+    --subtitle2-font-size: 12px;
+    --subtitle3-font-size: 10px;
+    --caption-font-size: 8px;
+  
+    --headline-line-height: 32px;
+    --common-line-height: 16px;
+    --caption-line-height: 12px;
+  
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+  
+    --drop-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    --drop-shadow-hover: 0px 3px 12px 3px rgba(0, 0, 0, 0.2);
+    --drop-shadow-inner: 0px 1px 3px 1px rgba(0, 0, 0, 0.25) inset;
+  }
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures elements are spaced evenly */
+    /* Padding for comfort */
+  }
+  
+  .search-wrap {
+    display: flex;
+    align-items: center;
+    background-color: var(--grayscale-white); /* White background */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: var(--drop-shadow-inner); /* Shadow for depth */
+    padding: 0.5rem; /* Padding for the wrapper */
+  }
+  
+  .search-input {
+    border: none; /* No border */
+    background: transparent; /* Transparent background */
+    flex: 1; /* Takes up remaining space */
+    font-size: var(--body3-fonts); /* Consistent font size */
+    width: 50vw;
+  }
+  
+  .search-input:focus {
+    outline: none; /* Remove outline on focus */
+  }
+  
+  .search-close-icon {
+    display: none; /* Hidden by default */
+    cursor: pointer; /* Indicates interactivity */
+    color: var(--identity-primary); /* Icon color */
+  }
+  
+  .search-close-icon-visible {
+    display: inline; /* Display when visible */
+  }
+  
+  .sort-wrapper {
+    position: relative; /* Needed for absolute positioning */
+  }
+  
+  .filter-wrapper {
+    background: var(--identity-primary); /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 0.5rem; /* Padding for comfort */
+    box-shadow: var(--drop-shadow-hover); /* Shadow for depth */
+    position: absolute; /* Positioned absolutely for dropdown effect */
+    top: 40px; /* Positioned below the sort icon */
+    right: 0; /* Aligns to the right */
+    display: none; /* Hidden by default */
+  }
+  
+  .filter-wrapper-open {
+    display: block; /* Display when opened */
+  }
+  
+  .filter-wrapper p {
+    color: var(--grayscale-white); /* White text */
+    font-weight: var(--font-weight-bold); /* Bold text */
+  }
+  
+  .filter-wrapper label {
+    display: flex; /* Flex layout for label */
+    align-items: center; /* Align radio buttons with text */
+    margin-bottom: 0.5rem; /* Spacing between labels */
+  }
+  
+  .filter-wrapper label:last-child {
+    margin-bottom: 0; /* Remove spacing for the last label */
+  }
+  
+  .filter-wrapper input {
+    margin-right: 0.5rem; /* Space between radio button and label */
+    accent-color: var(--identity-primary); /* Radio button color */
+  }
+  
+  /* Hover and focus styles for accessibility */
+  .search-wrap:hover {
+    box-shadow: var(--drop-shadow-hover); /* Increase shadow on hover */
+  }
+  
+  .filter-wrapper-overlay .main::before {
+    content: ''; /* Invisible content for overlay */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Place below other elements */
+  }
+  
