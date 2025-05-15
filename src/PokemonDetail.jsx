@@ -32,7 +32,7 @@ const PokemonDetail = ({ pokemonId, onBack }) => {
             <img
                 src={backtohome}
                 alt="back to home"
-                class="back-btn"
+                className="back-btn"
                 id="back-btn"
               />
             </a>

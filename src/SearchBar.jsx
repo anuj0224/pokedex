@@ -12,7 +12,7 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
         <img
             src={search}
             alt="search icon"
-            class="search-icon"
+            className="search-icon"
             width='20px'
         />
         <input
